@@ -1,6 +1,7 @@
 body {
   background-color: black;
 }
+
 .topNavBar {
   color: white;
   font-size: 20px;
@@ -22,6 +23,7 @@ body {
 .topNavBreak {
   width: 66%;
 }
+
 .titleBar {
   padding: 10px;
 }
@@ -34,4 +36,54 @@ body {
   margin: auto;
   width: 1000px;
   height: 1000px;
+}
+
+.releasesBody {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 66%;
+}
+.releaseBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid white;*/
+  width: 700px;
+  height: 250px;
+  padding: 25px;
+}
+.releaseImgBox {
+  border: 2px solid gray;
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+.releaseImg {
+
+}
+.releaseTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid gray;
+  width: 400px;
+  height: 200px;
+  padding: 25px;
+  float: left;
+  color: white;
+}
+.releaseTitle {
+  height: 20%;
+}
+.releaseBreak {
+  width: 100%;
+}
+.releaseDescription {
+}
+.releaseTracklist {
+  width: 50%;
+  float: left;
 }
