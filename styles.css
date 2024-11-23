@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+.topNavBar {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.topNav {
+  color: white;
+}
+.topNav:link, .topnav:visited {
+  background-color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.topNav:hover, .topNav:active {
+  background-color: gray;
+}
+.topNavBreak {
+  width: 66%;
+}
+.titleBar {
+  padding: 10px;
+}
+.titleName {
+  text-align: center;
+  color: white;
+}
+.titleImage {
+  border: 2px solid white;
+  margin: auto;
+  width: 1000px;
+  height: 1000px;
+}
