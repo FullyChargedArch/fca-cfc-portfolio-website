@@ -6,22 +6,28 @@ body {
  * Navigation 
 */
 
-.topNavBar {
+.topNavContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+.topNavLinksBar {
+
+}
+.topNavLink {
   color: white;
   font-size: 20px;
+  border-radius: 5px;
 }
-.topNav {
-  color: white;
-}
-.topNav:link, .topnav:visited {
+.topNavLink:link, .topNavLink:visited {
   background-color: black;
   padding: 10px 10px;
   text-decoration: none;
   display: inline-block;
 }
-.topNav:hover, .topNav:active {
+.topNavLink:hover, .topNavLink:active {
   background-color: gray;
 }
 .topNavBreak {
@@ -31,7 +37,9 @@ body {
 /*
  * Home 
 */
-
+.homeBody {
+  position: static;
+}
 .titleBar {
   padding: 10px;
 }
@@ -54,7 +62,7 @@ body {
 .releasesBody {
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   width: 66%;
@@ -68,6 +76,10 @@ body {
   border: 2px solid gray;
   border-radius: 25px;
   margin: 15px;
+  background-color: black;
+}
+.releaseContainer:hover {
+  background-color: #202020;
 }
 .releaseImgBox {
   border: 1px solid gray;
@@ -125,6 +137,10 @@ body {
   margin: 10px;
   padding: 25px;
   color: white;
+  background-color: black;
+}
+.songContainer:hover {
+  background-color: #202020;
 }
 .songTitle {
 
