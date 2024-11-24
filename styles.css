@@ -122,10 +122,12 @@ body {
 .lyricsBody {
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   width: 75%;
+  height: 1800px;
 }
 .songContainer {
   display: flex;
