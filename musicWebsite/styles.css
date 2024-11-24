@@ -125,7 +125,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-content: center;
   width: 75%;
   height: 1800px;
 }
