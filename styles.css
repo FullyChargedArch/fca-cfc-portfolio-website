@@ -38,7 +38,6 @@ body {
  * Home 
 */
 .homeBody {
-  position: static;
 }
 .titleBar {
   padding: 10px;
@@ -132,6 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 325px;
+  height: max-content;
   border: 2px solid gray;
   border-radius: 25px;
   margin: 10px;
