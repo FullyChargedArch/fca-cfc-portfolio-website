@@ -42,7 +42,19 @@ body {
   text-decoration: none;
 }
 .navBox:hover {
+  height: 120px;
   background-color: lightGray;
+  animation: 0.2s navBoxExpand linear;
+}
+@keyframes navBoxExpand {
+  0% {
+    height: 100px;
+    background-color: gray;
+  }
+  100% {
+    height: 120px;
+    background-color: lightGray;
+  }
 }
 .navContent {
   width: 100%;
