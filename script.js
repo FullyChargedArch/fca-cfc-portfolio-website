@@ -1,20 +1,6 @@
 function startNavBarAnimation() {
-  let id = null;
   const element = document.getElementById("navTitle");
-  let text = element.innerHTML;
-  let textLength = text.length;
-  let i = 1;
-  clearInterval(id);
-  id = setInterval(typeText, 50);
-  function typeText() {
-    element.innerHTML = text.substr(0, i);
-    if (i == textLength){ 
-      clearInterval(id); 
-      underscoreAnimation(); }
-    else { 
-      i++; 
-    }
-  }
+  typeOutText(element.innerHTML);
 }
 
 function typeOutText(text) {
@@ -87,7 +73,7 @@ function homeDVDAnimation() {
   const element = document.getElementById("titleCard");
   let x = 0; //container.offsetWidth * 0.5 - element.offsetWidth * 0.5;
   let y = 0; //container.offsetHeight * 0.4;
-  let xSpeed = 1.25;
+  let xSpeed = 1;
   let ySpeed = 1;
   clearInterval(id);
   id = setInterval(frame, 5);
@@ -114,4 +100,3 @@ function homeDVDAnimation() {
     element.style.top = y + "px";
   }
 }
-

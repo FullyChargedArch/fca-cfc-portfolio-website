@@ -9,11 +9,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 20%;
-  max-width: 400px;
+  width: 20vw;
   height: 100vh;
   background-color: gray;
-  position: relative; 
+  /*position: relative; */
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
 .navBarLinks {
   display: flex;
@@ -92,9 +94,10 @@ body {
 .homeContent {
   display: flex;
   flex-direction: column;
-  min-width: 80vw;
-  max-width: 100vw;
+  width: 80vw;
   height: 100vh;
+  position: fixed;
+  left: 20vw;
 }
 .titleCard {
   position: relative;
@@ -114,13 +117,64 @@ body {
   line-height: 0px;
 }
 
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  position: relative;
+  left: 20vw;
+}
+.aboutCardsContainer {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  height: 100vh;
+}
+.aboutImg {
+  height: 80vh;
+  width: 60vh;
+  border: 2px solid gray;
+  border-radius: 25px;
+}
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  height: calc(40vh - 12.5px);
+  width: calc(40vw - 50px);
+  border: 2px solid gray;
+  border-radius: 25px;
+  padding: 0px 25px;
+ }
+.aboutCardInteractive {
+  height: calc(40vh - 12.5px);
+  width: 40vw;
+  border: 2px solid gray;
+  border-radius: 25px;
+
+}
+.aboutCardTitle {
+  align-self: center;
+}
+.aboutCardBody {
+
+}
+
 .experienceContent{
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-items: center;
-  width: 80%;
+  width: 80vw;
+  position: relative;
+  left: 20vw;
 }
+
 .experienceCard {
   display: flex;
   flex-direction: row;
