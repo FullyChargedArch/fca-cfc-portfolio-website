@@ -141,6 +141,8 @@ body {
   width: 60vh;
   border: 2px solid gray;
   border-radius: 25px;
+  position: relative;
+  animation: 2s floatInUp ease;
 }
 .aboutCard {
   display: flex;
@@ -150,13 +152,32 @@ body {
   border: 2px solid gray;
   border-radius: 25px;
   padding: 0px 25px;
+  position: relative;
+  animation: 2s floatInRight ease;
  }
 .aboutCardInteractive {
   height: calc(40vh - 12.5px);
   width: 40vw;
   border: 2px solid gray;
   border-radius: 25px;
-
+  position: relative;
+  animation: 3s floatInRight ease;
+}
+@keyframes floatInUp {
+  0% {
+    top:100%;
+  }
+  100% {
+    top:0%;
+  }
+}
+@keyframes floatInRight {
+  0% {
+    left:100%;
+  }
+  100% {
+    left:0%;
+  }
 }
 .aboutCardTitle {
   align-self: center;
